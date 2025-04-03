@@ -1,0 +1,190 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            scroll-behavior: smooth;
+        }
+        /* Menú Fijo */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #d98880;
+            color: #f2d7d5;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #a93226;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        /* Secciones */
+        .section {
+            padding: 80px 20px;
+            min-height: 100vh;
+        }
+        .landing {
+            background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            text-align: center;
+            font-size: 2em;
+        }
+        .blog {
+            background: #f1948a;
+            padding: 50px;
+        }
+        .blog h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .blog article {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contacto {
+            background: #ddd;
+            padding: 50px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+    
+
+        
+
+        .contenedor:hover {
+            opacity: 0.90; /* Opacidad al 5% */
+        }
+        .contenedor img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+        .texto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .contenedor {
+            position: relative;
+            display: inline-block;
+            text-align: center; 
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            justify-content: center;
+            color: black;
+            transition: opacity 0.5s ease;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .btn {
+            position: absolute;
+            top: 90%;
+            width: 15%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+
+        .social-menu {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .social-menu a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            border-radius: 50%;
+            transition: background 0.3s, transform 0.5s;
+        }
+        .social-menu a:hover {
+            background-color: #555;
+            transform: rotate(360deg);
+        }
+        @media (max-width: 600px) {
+            .social-menu {
+                flex-direction: row;
+                top: auto;
+                bottom: 20px;
+                right: 50%;
+                transform: translateX(50%);
+            }

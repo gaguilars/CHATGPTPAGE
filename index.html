@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="java.js" defer></script>
+    <title>Landing Page y Blog</title> 
+</head>
+<body>
+    <div class="social-menu">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <nav>
+        <a href="#landing">Inicio</a>
+        <a href="#landing">Nosotros</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+  
+    <section id="landing" class="section landing">
+
+        <div class="contenedor">
+            <img id="imagenDinamica" src="C:\laragon\www\ia\1.jpg" alt="Imagen 1">
+                <div class="texto"><h3>Bienvenido a Nuestra Landing Page</h3></div>
+        </div>
+
+        
+    </section>
+
+    <section class="section landing">
+        <div class="contenedor">
+            <div class="carousel">
+                <img src="C:\laragon\www\ia\1.jpg" alt="Imagen 1">
+                <img src="C:\laragon\www\ia\2.jpg" alt="Imagen 2">
+                <img src="C:\laragon\www\ia\3.jpg" alt="Imagen 3">
+                <img src="C:\laragon\www\ia\4.jpg" alt="Imagen 4">
+                    <div class="texto"><h3>Bienvenido a Nuestra Landing Page</h3></div>
+            </div>
+            <button class="btn prev" onclick="moverCarrusel(-1)">&#10094;</button>
+            <button class="btn next" onclick="moverCarrusel(1)">&#10095;</button>
+        </div>
+    </section>
+    
+    <section id="blog" class="section blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>Artículo 1</h3>
+            <p>Contenido del primer artículo...</p>
+        </article>
+        <article>
+            <h3>Artículo 2</h3>
+            <p>Contenido del segundo artículo...</p>
+        </article>
+    </section>
+    
+    <section id="contacto" class="section contacto">
+        <h2 style="text-align: center;">Contacto</h2>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" required>
+            <label>Email:</label>
+            <input type="email" required>
+            <label>Mensaje:</label>
+            <textarea rows="5" required></textarea>
+            <button id="miBoton"type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
