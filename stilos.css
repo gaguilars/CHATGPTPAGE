@@ -49,7 +49,7 @@ nav {
 }
 
 .landing {
-    background: url('chatgptpage/img/pork11.jpg') no-repeat center center/cover;
+    background: url('img/pork11.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
